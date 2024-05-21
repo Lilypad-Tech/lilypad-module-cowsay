@@ -13,7 +13,7 @@
       "Docker": {
         "Entrypoint": [
           "/usr/local/bin/cowsay",
-          {{if .Message}}{{.Message}}{{else}}"Pass me an input called Message, like lilypad run cowsay:v0.0.2 -i Message=moo"{{end}}
+          {{if .Message}}{{.Message}}{{else}}"Pass me an input called Message, like lilypad run cowsay:<tag> -i Message=moo"{{end}}
         ],
         "Image": "richbrem/cowsay:latest"
       },
